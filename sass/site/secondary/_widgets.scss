@@ -1,0 +1,36 @@
+.widget {
+  margin: 0 0 1.5em;
+
+  /* Make sure select elements fit in widgets. */
+  select {
+    max-width: 100%;
+  }
+
+  a {
+    color: $berry;
+    &:visited {
+      color: $red;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $link-hover-color;
+    }
+    &:focus {
+      outline: thin dotted;
+    }
+    &:hover,
+    &:active {
+      outline: 0;
+      color: $link-hover-color;
+    }
+  }
+}
+
+.sidebar-widget-title {
+  text-decoration: underline;
+  text-decoration-color: $color__grey-sidebar;
+  color: $color__black-sidebar-title;
+  font-weight: 300;
+  border-left:none;
+}

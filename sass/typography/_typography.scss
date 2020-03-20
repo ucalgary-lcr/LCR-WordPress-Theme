@@ -1,0 +1,17 @@
+@import url("https://p.typekit.net/p.css?s=1&k=hyh4qgq&ht=tk&f=139.140.175.176.143.144.147.148.156.157.161.162&a=20230305&app=typekit&e=css");
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+
+@import "copy";

@@ -1,0 +1,122 @@
+/*____________________________________*\
+  #COLORS
+\*____________________________________*/
+
+$color__maroon: #a6192e;
+$color__red: #cf0722;
+$color__red-bright: #f40828;
+$color__red-light: #ffe5e5;
+$color__yellow-light: #ffe385;
+$color__yellow-dark: #cb9d00;
+$color__brown: #6b3529;
+$color__grey-light: #f5f5f5;
+$color__grey-med: #c4bfb6;
+$color__grey-drk: #8c857b;
+$color__grey-sidebar: #e6e6e6;
+$color__black-sidebar-title: #051414;
+$color__orange: #ff671f;
+$color__white: #fff;
+$color__black: #000;
+$color__off-black: #49251d;
+$color__off-white: #f7f7f7;
+$color__bg-head-top-color: #998f88;
+$color__bg-head-top-alt-color: #878071;
+$color__bg-head-mid-color: rgba(108, 102, 94, 0.8);
+$color__bg-head-mid-alt-color: #736d65;
+$color__bg-head-atom-color: #4a463d;
+$color__bg-footer-color: $color__grey-drk;
+$color__bg-accent-color-one: $color__maroon;
+$color__bg-accent-color-two: $color__orange;
+$color__bg-accent-color-three: #ce0058;
+$color__text-color-dark: #6f6258;
+$color__nav-bg-mob-color: #e6e4e0;
+$color__facebook: #3b5998;
+$color__twitter: #55acee;
+$color__linkedin: #007bb5;
+$color__instagram: #125688;
+$color__youtube: #bb0000;
+
+$color__background-body: #fff;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: #21759b;
+$color__text-input: #666;
+$color__text-input-focus: #111;
+$color__link: royalblue;
+$color__link-visited: purple;
+$color__link-hover: midnightblue;
+$color__text-main: #404040;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+
+$color__top-navigation-banner: rgba(136,125,117,0.8);
+$color__bottom-navigation-banner: rgba(109,100,93,0.8);
+
+/* main colors */
+$primary-color:         #A6192E;                  /* primary color */
+$secondary-color:       #CF0722;                  /* secondary color */
+$off-black-color:       #49251D;                  /* off black color */
+$red:                   rgba(214, 0, 28, 1);
+$gold:                  rgba(255, 205, 0, 1);
+$light-orange:          rgba(255, 163, 0, 1);
+$dark-orange:           rgba(255, 103, 31, 1);
+$berry:                 rgba(166, 25, 46, 1);
+$brown:                 rgba(107, 53, 41, 1);
+$light-grey:            rgba(196, 191, 182, 1);
+$dark-grey:             rgba(140, 133, 123, 1);
+$black:                 rgba(0, 0, 0, 1);
+$ruby:                  rgba(206, 0, 88, 1);
+$green:                 rgba(181, 189, 0, 1);
+$off-white-color:       #F7F7F7;                  /* off white color */
+$white-color:           #FFFFFF;                  /* white color */
+$light-brown:           #887d75;
+$dark-brown:            #6d645d;
+/* link colors */
+$link-color:            $secondary-color;         /* main anchor link color */
+$link-hover-color:      #FF671F;                  /* main anchor link hover color */
+$link-active-color:     $link-hover-color;        /* main anchor link active color */
+$link-visited-color:    $primary-color;           /* main anchor link visited color */
+/* Navigation colors */
+$headerNav:             #998f88;                  /* Main Navigation Background Colour */
+$topNav:                rgba(136,125,117,0.8);  /* Main Navigation Background Colour With Transparent */
+$topNavHover:           rgba(109, 100, 93, 1);
+$secondaryNav:          rgba(109,100,93,0.8);
+$mobileNavBg:           #998f88;
+$mobileLinkBg:          #8d827a;
+/* Navigation Width Calculation */
+$navItemWidth:           calc(100% / 5);
+/* background colors */
+$siteBackground:        #c4c3bb;                  /* Site Background Colour */
+$bg-color:              #C4BFB6;                  /* main bg color */
+$bg-section-color:      #FFFFFF;                  /* main bg section color */
+$bg-accent-color-one:   $primary-color;           /* accent section bg color */
+$bg-accent-color-two:   $link-hover-color;        /* accent section bg color two */
+$bg-accent-color-three: #CE0058;                  /* accent section bg color three */
+/* text colors */
+$text-color-dark:       #6F6258;                  /* main text color for use on light backgrounds */
+$text-color-light:      #FFFFFF;                  /* main text color for use on dark backgrounds */
+/* icon colors */
+$icon-color:            $link-hover-color;        /* icon accent color used on white backgrounds */
+$facebook-color:        #3b5998;                  /* facebook color used on icons */
+$twitter-color:         #55acee;                  /* twitter color used on icons */
+$linkedin-color:        #007bb5;                  /* linkedin color used on icons */
+$instagram-color:       #125688;                  /* instagram color used on icons */
+$youtube-color:         #bb0000;                  /* youtube color used on icons */
+/* main button colors */
+$btn-bg-color:          $secondary-color;         /* main button dark background */
+$btn-text-color:        #FFFFFF;                  /* main button light text */
+$btn-bg-hover-color:    #F40828;                  /* main button hover background */
+$btn-text-hover-color:  $btn-text-color;          /* main button hover text */
+/* alternative button colors */
+$btn-alt-bg-color:      transparent;             /* alternative button light background */
+$btn-alt-text-color:    inherit;                 /* alternative button text */
+/* Fonts */
+$fontFamily:            Proxima Nova, Arial, Helvetica, sans-serif;             /* accent section bg color three */

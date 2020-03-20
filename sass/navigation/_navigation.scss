@@ -1,0 +1,74 @@
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+@import "links";
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+@import "menus";
+
+/*--------------------------------------------------------------
+## Navigation bands
+--------------------------------------------------------------*/
+head {
+  top: 0;
+  padding: 0;
+}
+.logo-branding {
+  background-color: $color__top-navigation-banner;
+  width: 100%;
+  padding: 3px;
+  align-items: flex-start;
+}
+.main-navigation-band {
+  background-color: $color__bottom-navigation-banner;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0 15px 0;
+}
+.site-branding {
+  border-bottom: 0 solid $color__white;
+}
+.site-title a {
+  color: $color__white;
+  text-decoration: none;
+}
+h1.site-title {
+  padding: 0 10px 0 0;
+  font-size: 16px;
+  margin: 0 0 0 10px;
+}
+
+img.custom-logo {
+  height: 60px;
+  width: 55%;
+}
+@media screen and (min-width: 1200px) {
+  .main-navigation-band {
+    background-color: $color__bottom-navigation-banner;
+    width: 100%;
+    height: 100%;
+    padding:0;
+  }
+  h1.site-title {
+    margin: 0;
+    padding: 10px 0 0 0;
+    font-size: 24px;
+    margin: 0;
+  }
+  .site-branding {
+    border-bottom: 1px solid $color__white;
+    flex-grow: 1;
+  }
+  .main-navigation {
+    flex-grow: 1;
+  }
+  img.custom-logo {
+    height: 70px;
+    width: 180px;
+  }
+  .logo-branding {
+    align-items: flex-end;
+  }
+}

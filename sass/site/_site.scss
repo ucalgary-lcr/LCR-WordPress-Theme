@@ -1,0 +1,68 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+/*--------------------------------------------------------------
+## Body
+--------------------------------------------------------------*/
+html,
+body {
+  overflow-x: hidden;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  color: #6f6258;
+  background-color: #c4c3bb;
+  height: 100%;
+}
+#content.site-content {
+  margin: 0 auto;
+  max-width: 1500px;
+  background-color: #ffffff;
+  padding-top: 20px;
+  height: 100%;
+}
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+footer.site-footer {
+  background-color: $light-brown;
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+  color: $white-color;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+footer.site-footer .site-info{
+  margin: 0;
+  font-size: 0.8em;
+}
+footer.site-footer a {
+  color: $white-color;
+  text-decoration: none;
+}
+footer.site-footer a:hover {
+  color: $link-hover-color;
+}
+@media only screen and (min-width: 583px) {
+  #content.site-content {
+    margin: 0 auto;
+    max-width: 1500px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    height: 100vh;
+  }
+}

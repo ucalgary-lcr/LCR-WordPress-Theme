@@ -1,0 +1,105 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+	font-size: ($sizeValue * 16) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+@mixin main {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  text-align: justify;
+  display: flex;
+  background-color: transparent;
+  padding: {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
+@mixin navStyles {
+  text-align: center;
+  color: $white-color;
+  text-decoration: none;
+}
+
+@mixin desktopNavigation {
+  nav ul.main-nav {
+    @include main;
+    li.nav-links-1 {
+      float: left;
+      list-style: none;
+      text-align: center;
+      width: $navItemWidth;
+      box-sizing: border-box;
+      border: none;
+      background-color: transparent;
+      :hover {
+        background-color: $berry;
+      }
+      :active {
+        border-bottom: 2px solid $link-hover-color;
+      }
+    }
+  }
+}
+@mixin desktopLinkStyles {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  display: block;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+@mixin heroesContentLg {
+  width: 25%;
+  z-index: 2;
+  bottom: 35%;
+  margin: auto;
+  position: absolute;
+  color: white;
+  padding: 20px;
+}
+@mixin heroesContentSm {
+  width: 100%;
+  z-index: 2;
+  margin: -27px 0 0 0;
+  position: relative;
+  padding: 20px;
+  border-radius: 0;
+}
+@mixin burbs {
+  color: $white-color;
+  padding: 25px;
+  min-height: 400px;
+  max-height: 400px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}

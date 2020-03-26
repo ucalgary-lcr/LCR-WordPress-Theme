@@ -118,7 +118,7 @@ function ucalgary_widgets_init() {
 		'name'          => esc_html__('Footer Section one', 'ucalgary'),
 		'id'            => 'footer_section_one',
 		'description'   => esc_html__('Add widgets here.', 'ucalgary'),
-		'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-xs-12 center-xs col-lg start-lg first-lg middle-lg">',
+		'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-xs-12 col-sm-12 col-md-4 col-lg-4 center-xs center-sm start-md start-lg">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="footer-widget-title">',
 		'after_title'   => '</h2>',
@@ -128,7 +128,7 @@ function ucalgary_widgets_init() {
 		'name'          => esc_html__('Footer Section two', 'ucalgary'),
 		'id'            => 'footer_section_two',
 		'description'   => esc_html__('Add widgets here.', 'ucalgary'),
-		'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-xs-12 center-xs col-lg between-lg middle-lg center-lg">',
+		'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-xs-12 col-sm-12 col-md-4 col-lg-4 center-xs center-sm center-md center-lg">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="footer-widget-title">',
 		'after_title'   => '</h2>',
@@ -138,7 +138,7 @@ function ucalgary_widgets_init() {
 		'name'          => esc_html__('Footer Section three', 'ucalgary'),
 		'id'            => 'footer_section_three',
 		'description'   => esc_html__('Add widgets here.', 'ucalgary'),
-		'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-xs-12 center-xs col-lg end-lg middle-lg">',
+		'before_widget' => '<div id="%1$s" class="footer-widget %2$s col-xs-12 col-sm-12 col-md-4 col-lg-4 center-xs center-sm end-md end-lg">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2 class="footer-widget-title">',
 		'after_title'   => '</h2>',
@@ -155,6 +155,12 @@ function ucalgary_scripts() {
 	wp_enqueue_script( 'ucalgary-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'ucalgary-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	// wp_enqueue_script( 'jquery-3.2.1', get_template_directory_uri() . '/js/jquery-3.2.1.slim.min.js', array(), '20151215', true );
+
+	// wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array(), '20151215', true );
+
+	// wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

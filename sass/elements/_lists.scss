@@ -16,6 +16,11 @@ li > ol {
 	margin-left: 1.5em;
 }
 
+aside section ul, aside section ol {
+	list-style: none;
+	margin-left: -2em;
+}
+
 dt {
 	font-weight: bold;
 }

@@ -25,15 +25,24 @@ ul.main-nav {
       color: $white-color;
     }
   }
-      :hover {
-        background-color: $berry;
-      }
+  :hover {
+    background-color: $berry;
+    color: $white-color;
+  }
 }
 
 //submenu styles
 .main-navigation ul.main-nav ul.sub-menu,
 .main-navigation ul.main-nav ul.sub-menu ul.submenu {
   display: none;
+  list-style: none;
+}
+.main-navigation ul.main-nav ul.sub-menu,
+.main-navigation ul.main-nav ul.sub-menu ul.sub-menu {
+  padding-left: 0;
+}
+ul.main-nav li:hover > ul.sub-menu {
+  display: block;
 }
 
 .menu-toggle i {
@@ -102,5 +111,25 @@ ul.main-nav {
   .main-navigation ul.main-nav ul.sub-menu,
   .main-navigation ul.main-nav ul.sub-menu ul.submenu {
     display: none;
+  }
+
+  .main-navigation ul.main-nav ul.sub-menu,
+  .main-navigation ul.main-nav ul.sub-menu ul.submenu {
+    display: none;
+    position: static;
+    margin: 0 auto;
+    background-color: $white-color;
+    color: #6f6258;
+    list-style: none;
+    box-shadow: 5px 10px 18px #888888;
+  }
+
+  .main-navigation ul.main-nav ul.sub-menu li a,
+  .main-navigation ul.main-nav ul.sub-menu ul.sub-menu li a {
+    color: #6f6258;
+  }
+  .main-navigation ul.main-nav ul.sub-menu li:hover > a,
+  .main-navigation ul.main-nav ul.sub-menu ul.sub-menu li:hover > a {
+    color: #ffffff !important;
   }
 }

@@ -18,9 +18,11 @@
 	<div class="site-info">
 		<div class="container">
 			<div class="row">
-				<?php dynamic_sidebar('footer_section_one'); ?>
-				<?php dynamic_sidebar('footer_section_two'); ?>
-				<?php dynamic_sidebar('footer_section_three'); ?>
+				
+					<?php dynamic_sidebar('footer_section_one'); ?>
+					<?php dynamic_sidebar('footer_section_two'); ?>
+					<?php dynamic_sidebar('footer_section_three'); ?>
+				
 			</div>
 		</div>
 	</div><!-- .site-info -->
@@ -34,6 +36,8 @@
 	navBarToggle.addEventListener('click', function() {
 		mainNav.classList.toggle('active');
 	});
+
+	
 </script>
 
 <?php wp_footer(); ?>

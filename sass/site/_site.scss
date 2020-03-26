@@ -27,7 +27,6 @@ body {
   margin: 0 auto;
   max-width: 1500px;
   background-color: #ffffff;
-  padding-top: 20px;
   height: 100%;
 }
 .vcenter {
@@ -45,8 +44,9 @@ footer.site-footer {
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 2em 0 2em 0;
 }
-footer.site-footer .site-info{
+footer.site-footer .site-info {
   margin: 0;
   font-size: 0.8em;
 }
@@ -57,12 +57,12 @@ footer.site-footer a {
 footer.site-footer a:hover {
   color: $link-hover-color;
 }
-@media only screen and (min-width: 583px) {
+@media only screen and (min-height: 1080px) {
   #content.site-content {
     margin: 0 auto;
     max-width: 1500px;
     background-color: #ffffff;
-    padding-top: 20px;
+
     height: 100vh;
   }
 }
